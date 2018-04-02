@@ -1,7 +1,7 @@
 # y570 i3 config
 
 #pango:font Inconsolata
-font pango:DejaVu 11
+font pango:Inconsolata 12
 
 set $mod Mod4
 
