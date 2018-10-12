@@ -21,7 +21,7 @@ set $outer 32
 
 # TOGGLE GAPS
 bindsym $mod+g exec compton; gaps inner all set $inner; gaps outer all set $outer
-bindsym $mod+Ctrl+g exec pkill compton; gaps inner all set 0; gaps outer all set 0
+bindsym $mod+Shift+g exec pkill compton; gaps inner all set 0; gaps outer all set 0
 
 #bindsym $mod+Return exec gnome-terminal
 
@@ -156,7 +156,7 @@ bindsym $mod+p exec --no-startup-id ~/projects/i3wm-video-output-toggle/toggle.s
 
 # Lock screen
 bindsym $mod+l exec --no-startup-id ~/projects/i3lock-fancy/lock -t "" && xset dpms force off
-#bindsym $mod+shift+l --no-startup-id xset dpms force off
+#bindsym $mod+Shift+l --no-startup-id xset dpms force off
 
 # Screenshots
 bindsym Print exec scrot -e 'mv $f ~/Dropbox/Screenshots'
