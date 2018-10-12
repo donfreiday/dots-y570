@@ -20,7 +20,7 @@ set $outer 32
 #gaps outer $outer
 
 # TOGGLE GAPS
-bindsym $mod+g exec compton; gaps inner all set $inner; gaps outer all set $outer
+bindsym $mod+g exec compton --config ~/.config/compton.conf; gaps inner all set $inner; gaps outer all set $outer
 bindsym $mod+Shift+g exec pkill compton; gaps inner all set 0; gaps outer all set 0
 
 #bindsym $mod+Return exec gnome-terminal
@@ -141,7 +141,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Autostarts
 exec --no-startup-id dropbox
-exec --no-startup-id compton -b
+exec --no-startup-id compton --config ~/.config/compton.conf -b
 exec --no-startup-id  feh --randomize --bg-fill ~/.wallpaper/*
 exec --no-startup-id udiskie -2 -t
 exec --no-startup-id echo "0" > /tmp/i3wm-output-state.dat
