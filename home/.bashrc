@@ -24,3 +24,4 @@ alias 141f='nautilus ~/Dropbox/esu/cpsc141 &'
 
 alias msfconsole="msfconsole --quiet -x \"db_connect don@msf\""
 
+alias beersmith="GTK_THEME=Adwaita:light /usr/bin/beersmith3 &"

@@ -13,7 +13,7 @@ for_window [title="^.*"] border pixel 0
 
 # GAP VARIABLES
 set $inner 16
-set $outer 32
+set $outer 16
 
 # SET GAPS
 #gaps inner $inner
@@ -21,7 +21,7 @@ set $outer 32
 
 # TOGGLE GAPS
 bindsym $mod+g exec compton --config ~/.config/compton.conf; gaps inner all set $inner; gaps outer all set $outer
-bindsym $mod+Shift+g exec pkill compton; gaps inner all set 0; gaps outer all set 0
+bindsym $mod+Shift+g exec pkill compton; gaps inner all set 0; gaps outer all set 0; exec compton --config ~/.config/compton.conf
 
 #bindsym $mod+Return exec gnome-terminal
 
@@ -142,7 +142,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # Autostarts
 exec --no-startup-id dropbox
 exec --no-startup-id compton --config ~/.config/compton.conf -b
-exec --no-startup-id  feh --randomize --bg-fill ~/.wallpaper/*
+exec --no-startup-id  feh --randomize --bg-fill ~/Dropbox/wallpaper/i3
 exec --no-startup-id udiskie -2 -t
 exec --no-startup-id echo "0" > /tmp/i3wm-output-state.dat
 exec --no-startup-id xrandr --output LVDS1 --auto --gamma 0.8:0.8:0.8 --output HDMI1 --off --output --VGA1 --off
@@ -156,7 +156,7 @@ bindsym $mod+p exec --no-startup-id ~/projects/i3wm-video-output-toggle/toggle.s
 
 # Lock screen
 bindsym $mod+l exec --no-startup-id ~/projects/i3lock-fancy/lock -t "" && xset dpms force off
-#bindsym $mod+Shift+l --no-startup-id xset dpms force off
+bindsym $mod+Shift+l exec sleep 1 && exec xset dpms force off
 
 # Screenshots
 bindsym Print exec scrot -e 'mv $f ~/Dropbox/Screenshots'
