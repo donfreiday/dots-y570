@@ -23,7 +23,7 @@ set $outer 16
 bindsym $mod+g exec compton --config ~/.config/compton.conf; gaps inner all set $inner; gaps outer all set $outer
 bindsym $mod+Shift+g exec pkill compton; gaps inner all set 0; gaps outer all set 0; exec compton --config ~/.config/compton.conf
 
-#bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec gnome-terminal
 
 bindsym $mod+Shift+q kill
 
