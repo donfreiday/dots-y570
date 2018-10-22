@@ -16,8 +16,8 @@ set $inner 16
 set $outer 16
 
 # SET GAPS
-#gaps inner $inner
-#gaps outer $outer
+gaps inner $inner
+gaps outer $outer
 
 # TOGGLE GAPS
 bindsym $mod+g exec compton --config ~/.config/compton.conf; gaps inner all set $inner; gaps outer all set $outer
@@ -142,7 +142,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # Autostarts
 exec --no-startup-id dropbox
 exec --no-startup-id compton --config ~/.config/compton.conf -b
-exec --no-startup-id  feh --randomize --bg-fill ~/Dropbox/wallpaper/i3
+exec --no-startup-id  feh --randomize --bg-scale ~/Dropbox/wallpaper/seasons-fall
 exec --no-startup-id udiskie -2 -t
 exec --no-startup-id echo "0" > /tmp/i3wm-output-state.dat
 exec --no-startup-id xrandr --output LVDS1 --auto --gamma 0.8:0.8:0.8 --output HDMI1 --off --output --VGA1 --off
