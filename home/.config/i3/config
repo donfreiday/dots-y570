@@ -155,8 +155,8 @@ bindsym $mod+p exec --no-startup-id ~/projects/i3wm-video-output-toggle/toggle.s
 #bindsym $mod+e exec --no-startup-id thunar
 
 # Lock screen
-bindsym $mod+l exec --no-startup-id ~/projects/i3lock-fancy/lock -t "" && xset dpms force off
-bindsym $mod+Shift+l exec sleep 0.1 && exec xset dpms force off
+bindsym $mod+l exec --no-startup-id i3lock-fancy && xset dpms force off
+bindsym $mod+Shift+l exec sleep 0.2 && exec xset dpms force off
 
 # Screenshots
 bindsym Print exec scrot -e 'mv $f ~/Dropbox/Screenshots'
