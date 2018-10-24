@@ -141,7 +141,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Autostarts
 exec --no-startup-id dropbox
-exec --no-startup-id compton --config ~/.config/compton.conf -b
+exec --no-startup-id compton --config ~/.config/compton.conf
 exec --no-startup-id  feh --randomize --bg-scale ~/Dropbox/wallpaper/seasons-fall
 exec --no-startup-id udiskie -2 -t
 exec --no-startup-id echo "0" > /tmp/i3wm-output-state.dat
