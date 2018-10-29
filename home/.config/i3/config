@@ -16,8 +16,8 @@ set $inner 16
 set $outer 16
 
 # SET GAPS
-gaps inner $inner
-gaps outer $outer
+#gaps inner $inner
+#gaps outer $outer
 
 # TOGGLE GAPS
 bindsym $mod+g exec compton --config ~/.config/compton.conf; gaps inner all set $inner; gaps outer all set $outer
