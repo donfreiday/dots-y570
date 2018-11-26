@@ -25,4 +25,5 @@ alias 250f='nautilus ~/Dropbox/esu/cpsc250 &'
 alias 141='cd ~/Dropbox/esu/cpsc141 && ls'
 alias 141f='nautilus ~/Dropbox/esu/cpsc141 &'
 
-
+# Gnome settings
+gsettings set org.gnome.SessionManager logout-prompt false
