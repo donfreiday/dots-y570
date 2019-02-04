@@ -13,6 +13,7 @@ export VISUAL="nano"
 alias ls='ls -lhA --color=auto'
 alias cast=mkchromecast
 alias windows='VBoxManage startvm "win10-ltsb" --type gui'
+alias fedora='VBoxManage startvm "fedora" --type gui'
 alias msfconsole="msfconsole --quiet -x \"db_connect don@msf\""
 alias beersmith="GTK_THEME=Adwaita:light /usr/bin/beersmith3 &"
 
