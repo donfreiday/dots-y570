@@ -28,7 +28,8 @@ bindsym $mod+Return exec gnome-terminal
 bindsym $mod+Shift+q kill
 
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec --no-startup-id rofi -show run -font "inconsolata 14" -theme Arc-Dark
+# bindsym $mod+d exec --no-startup-id rofi -show run -font "inconsolata 14" -theme Arc-Dark
+bindsym $mod+d exec --no-startup-id albert show
 
 
 bindsym $mod+Left focus left
@@ -147,6 +148,7 @@ exec --no-startup-id udiskie -2 -t
 exec --no-startup-id echo "0" > /tmp/i3wm-output-state.dat
 exec --no-startup-id xrandr --output LVDS1 --auto --gamma 0.8:0.8:0.8 --output HDMI1 --off --output --VGA1 --off
 exec --no-startup-id nm-applet
+exec --no-startup-id albert 
 
 # Display toggle
 bindsym $mod+p exec --no-startup-id ~/projects/i3wm-video-output-toggle/toggle.sh
