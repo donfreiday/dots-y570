@@ -28,3 +28,6 @@ alias 141f='nautilus ~/Dropbox/esu/cpsc141 &'
 
 # Gnome settings
 gsettings set org.gnome.SessionManager logout-prompt false
+
+# Adjust built-in display gamma
+xrandr --output LVDS1 --auto --gamma 0.8:0.8:0.8
